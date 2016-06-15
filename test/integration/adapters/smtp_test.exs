@@ -7,10 +7,10 @@ defmodule Swoosh.Integration.Adapters.SMTPTest do
 
   setup_all do
     config = [relay: System.get_env("SMTP_RELAY"),
-	      username: System.get_env("SMTP_USERNAME"),
-	      password: System.get_env("SMTP_PASSWORD"),
-	      tls: :always,
-	      auth: :always]
+              username: System.get_env("SMTP_USERNAME"),
+              password: System.get_env("SMTP_PASSWORD"),
+              tls: :always,
+              auth: :always]
     {:ok, config: config}
   end
 
